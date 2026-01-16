@@ -1,14 +1,11 @@
+import 'package:adventofcode_2025/problems/day_1/types.dart';
 import 'package:adventofcode_2025/types/input_parser.dart';
 
-enum Direction { left, right }
-
-typedef Puzzle1Input = List<({Direction direction, int distance})>;
-
-final class Day1Puzzle1InputParser extends InputParser<Puzzle1Input> {
+final class Day1Puzzle1InputParser extends InputParser<PuzzleInput> {
   const Day1Puzzle1InputParser(super.rawInput);
 
   @override
-  Puzzle1Input parse() {
+  PuzzleInput parse() {
     return rawInput.trim().split('\n').map((line) {
       final directionMarker = line[0];
       final distanceString = line.substring(1);

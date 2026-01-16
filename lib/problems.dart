@@ -1,4 +1,5 @@
 import 'package:adventofcode_2025/problems/day_1/puzzle_1.dart';
+import 'package:adventofcode_2025/problems/day_1/puzzle_2.dart';
 
 enum Status { unsolved, solved }
 
@@ -11,7 +12,7 @@ abstract base class Problem {
 }
 
 const List<List<Problem>> problems = [
-  [Day1Puzzle1()],
+  [Day1Puzzle1(), Day1Puzzle2()],
 ];
 
 extension Problems on List<List<Problem>> {
