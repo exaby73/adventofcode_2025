@@ -1,7 +1,7 @@
 abstract base class InputParser<T> {
-  const InputParser(this.input);
+  const InputParser(this.rawInput);
 
-  final String input;
+  final String rawInput;
 
   T parse();
 }

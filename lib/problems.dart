@@ -7,7 +7,7 @@ abstract base class Problem {
 
   final Status status;
 
-  String solve(String input);
+  String solve(String rawInput);
 }
 
 const List<List<Problem>> problems = [
