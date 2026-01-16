@@ -1,0 +1,5 @@
+.dart_tool/
+.asdf/
+.claude/
+
+problems/day_*/puzzle_*/input.txt
