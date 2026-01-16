@@ -1,6 +1,12 @@
 import 'package:adventofcode_2025/problems/day_1/puzzle_1.dart';
 
-abstract interface class Problem {
+enum Status { unsolved, solved }
+
+abstract base class Problem {
+  const Problem(this.status);
+
+  final Status status;
+
   String solve(String input);
 }
 
